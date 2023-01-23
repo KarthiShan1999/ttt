@@ -1,0 +1,8 @@
+#!/bin/bash
+
+inches=42
+
+# converting inches to feet
+feet=$(echo "$inches / 12" | bc -l)
+
+echo "$inches inches is equal to $feet feet"

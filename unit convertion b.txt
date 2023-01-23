@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# define the plot dimensions in feet
+length=60
+width=40
+
+# convert feet to meters
+length_meters=$(echo "$length * 0.3048" | bc -l)
+width_meters=$(echo "$width * 0.3048" | bc -l)
+
+# calculate area in square meters
+area_meters=$(echo "$length_meters * $width_meters" | bc -l)
+
+echo "The area of the plot is $area_meters square meters"

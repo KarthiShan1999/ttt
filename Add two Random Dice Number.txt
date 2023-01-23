@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Function to roll the dice
+roll_dice() {
+  dice_roll=$(( ( RANDOM % 6 )  + 1 ))
+  echo $dice_roll
+}
+
+# Roll the first dice
+dice1=$(roll_dice)
+
+# Roll the second dice
+dice2=$(roll_dice)
+
+# Add the two dice rolls
+result=$((dice1 + dice2))
+
+# Print the result
+echo "Dice 1: $dice1"
+echo "Dice 2: $dice2"
+echo "Result: $result"

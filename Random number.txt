@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Generate a single digit random number
+random_digit=$(( RANDOM % 10 ))
+
+# Print the random number
+echo "Random digit: $random_digit"
